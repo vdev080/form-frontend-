@@ -26,7 +26,7 @@ const UserForm = () => {
         }
 
         try {
-            await axios.post("https://form-backend-h0a1.onrender.com", formData);
+            await axios.post("https://form-backend-h0a1.onrender.com/api/save-user", formData);
             setSubmitted(true);
         } catch (error) {
             console.error("Error saving data", error);
